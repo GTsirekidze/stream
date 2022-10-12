@@ -11,7 +11,6 @@ public class Main {
 
     public static void worker(String sentence){
 
-
         Map<Character,List<String>> words =
                 Stream.of(sentence.split(" "))
                 .collect(groupingBy(s->s.charAt(0)));
